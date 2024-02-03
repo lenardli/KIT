@@ -1,14 +1,22 @@
-import telebot
+from database.common.models import db, History
+from database.core import crud
+from tg_API.core import Bot
+import requests
 
-token= "6851372913:AAG0D8oouK_wstkjKRudUX3scgrzPzhqpmk"
-bot = telebot.TeleBot(token)
-@bot.message_handler(commands=['start', 'help'])
-def send_welcome(message):
-    print(message)
-    bot.reply_to(message, "Hello world!")
-@bot.message_handler(func=lambda message: True)
-def echo_all(message):
-    bot.reply_to(message, message.text)
 
-if __name__ == '__main__':
-    bot.infinity_polling()
+# db_write = crud.create()
+# db_read = crud.retrieve_all()
+
+Bot()
+# headers = {'User-Agent': 'api-test-agent'}
+# params = {"clusters": "true"}
+# resp = requests.get(url='https://api.hh.ru/vacancies', headers=headers, params=params)
+
+
+# data = [{'station_type': "1", 'station_title': "2"}]
+# db_write(db, History, data)
+#
+#retrieved = db_read(db, History, History.station_type, History.station_title)
+
+# for element in retrieved:
+#     print(element.station_ru, element.station_eng)
