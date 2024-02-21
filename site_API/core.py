@@ -2,9 +2,11 @@ from tg_API.config_data.settings import SiteSettings
 from site_API.utils.site_api_handler import SiteApiInterface
 
 site = SiteSettings()
-params = {}
+params = {"clusters": "true"}
+headers = {'User-Agent': "api-test-agent"}
 
-url = "https://" + site.host_api
+
+url = "https://api.hh.ru/vacancies"
 
 site_api = SiteApiInterface()
 

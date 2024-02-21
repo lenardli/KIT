@@ -2,7 +2,7 @@ from tg_API.loader import bot
 from telebot import types
 
 
-@bot.message_handler(commands=['start', 'help',  'hello-world'])
+@bot.message_handler(commands=['start'])
 def send_welcome(message):
     bot.send_message(message.chat.id, "Hello!")
 

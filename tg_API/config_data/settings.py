@@ -12,6 +12,4 @@ else:
 
 
 class SiteSettings(BaseSettings):
-    api_key: SecretStr = os.getenv("API_KEY", None)
     TG_key: SecretStr = os.getenv("TG_KEY", None)
-    host_api: StrictStr = os.getenv("HOST_API", None)
