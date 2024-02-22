@@ -1,7 +1,7 @@
 import os
 
 from dotenv import load_dotenv, find_dotenv
-from pydantic import SecretStr, StrictStr
+from pydantic import SecretStr
 from pydantic_settings import BaseSettings
 
 
