@@ -12,7 +12,7 @@ Bot()
 # headers = {'User-Agent': "api-test-agent"}
 # url = "https://api.hh.ru/vacancies"
 #
-# resp = requests.get(url, headers=headers, params=params).json()
+# resp = requests.get(url, headers=he:aders, params=params).json()
 # for i in resp["clusters"]:
 #     print(i)
     # if i["name"] == "Образование":

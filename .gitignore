@@ -3,4 +3,4 @@
 venv/
 .env
 *.pyc
-test*
+__pycache__/
