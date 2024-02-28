@@ -16,7 +16,7 @@ def _low_vacancies(
         func=get_response,
         cluster_url=None):
     resp = func(url, headers, params)
-    print(resp)
+    # print(resp)
     mode = {
         "low_salary": [
             "Уровень дохода", 0], "low_edu": [
@@ -27,14 +27,15 @@ def _low_vacancies(
             if i["name"] == mode[data][0]:
                 cluster_url = i["items"][mode[data][1]]["url"]
                 break
+
         items = requests.get(url=cluster_url, headers=headers).json()["items"]
-        # print(items)
+        print(items)
         if data == "low_salary":
             items.sort(key=lambda x: x["salary"]["to"]
                        if x["salary"]["to"] is not None else -1)
             items = list(
                 filter(
-                    lambda item: item["salary"]["to"] is not None,
+                    lambda item: item["salary"]["to"] is not None and item["snippet"]["responsibility"] is not None and item["alternate_url"] is not None,
                     items))
         for i in items[:3]:
             yield "<b>Обязанности: </b>", i["snippet"]["responsibility"][0].lower() + i["snippet"]["responsibility"][1:], "\n\n", i["alternate_url"],
