@@ -1,5 +1,6 @@
 from tg_API.loader import bot
-from tg_API.handlers import start, low, help
+from tg_API.handlers import start, low, help, custom
+
 
 
 class Bot:

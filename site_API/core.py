@@ -5,12 +5,9 @@ site = SiteSettings()
 params = {"clusters": "true"}
 headers = {'User-Agent': "api-test-agent"}
 
-
 url = "https://api.hh.ru/vacancies"
 
 site_api = SiteApiInterface()
 
 if __name__ == '__main__':
     site_api()
-
-

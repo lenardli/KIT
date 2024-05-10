@@ -1,6 +1,5 @@
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
-from site_API.core import url, params, headers, site_api
-from tg_API.loader import bot
+
 
 def low_markup():
     markup = InlineKeyboardMarkup()
@@ -11,12 +10,6 @@ def low_markup():
     return markup
 
 
-@bot.callback_query_handler(func=lambda call: call.data in ["low_salary", "low_edu", "low_exp"])
-def low_salary_call(call):
-    bot.send_message(call.message.chat.id, "Ищу информацию. Подождите.")
-    get_response = site_api.get_low_vacancy()
-    for i in get_response(url, headers, params, call.data):
-        # print(i)
-        bot.send_message(call.message.chat.id, ''.join(i), parse_mode="HTML")
+
 
 
