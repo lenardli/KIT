@@ -1,5 +1,5 @@
-develop_PYTHON - ТГ-бот на python
+ветка develop_PYTHON - ТГ-бот на python
 
-develop_C - реализация утилиты cat и grep на C
+ветка develop_C - реализация утилиты cat и grep на C
 
-Ачивки - мои сертификаты и грамоты
+ветка Ачивки - мои сертификаты и грамоты
