@@ -13,7 +13,7 @@ def _store_date(db: db, model: T, *data: List[Dict]) -> None:
 
 def _retrieve_single_row(db: db, model: T, query: str) -> ModelSelect:
     with db.atomic():
-        response = model.select().where(model.station_eng == query)
+        response = model.select().where(model.user_id == query)
     return response
 
 

@@ -16,7 +16,7 @@ def custom_edu():
     markup.add(InlineKeyboardButton("Вакансии, требующие высшего образования",
                                     callback_data="higher"),
                InlineKeyboardButton("Вакансии, требующие среднего специального образования",
-                                    callback_data="especial_secondary"),
+                                    callback_data="special_secondary"),
                InlineKeyboardButton("Вакансии, в которых образование не указано или не требуется",
                                     callback_data="no_edu")
                )

@@ -12,6 +12,7 @@ bot.add_custom_filter(custom_filters.StateFilter(bot))
 
 class MyStates(StatesGroup):
     custom_salary = State()
+    none_state = State()
 
 
 
