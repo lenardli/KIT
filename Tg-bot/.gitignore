@@ -1,6 +1,0 @@
-# created by virtualenv automatically#ignore all subfolders
-**.idea/
-venv/
-.env
-*.pyc
-__pycache__/
