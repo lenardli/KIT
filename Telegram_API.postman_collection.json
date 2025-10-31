@@ -1,0 +1,290 @@
+{
+	"info": {
+		"_postman_id": "03d6d20b-e830-4a1b-a67a-c90bb3cef4f6",
+		"name": "Telegram API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34537835",
+		"_collection_link": "https://www.postman.com/workspace/My-Workspace~3d88894d-1dc8-465f-850e-dabd3ff77b64/collection/34537835-03d6d20b-e830-4a1b-a67a-c90bb3cef4f6?action=share&source=collection_link&creator=34537835"
+	},
+	"item": [
+		{
+			"name": "getMe",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.telegram.org/bot{{vault:tg}}/getMe",
+					"protocol": "https",
+					"host": [
+						"api",
+						"telegram",
+						"org"
+					],
+					"path": [
+						"bot{{vault:tg}}",
+						"getMe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getUpdates",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.telegram.org/bot{{vault:tg}}/getUpdates",
+					"protocol": "https",
+					"host": [
+						"api",
+						"telegram",
+						"org"
+					],
+					"path": [
+						"bot{{vault:tg}}",
+						"getUpdates"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sendMessage",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.telegram.org/bot{{vault:tg}}/sendMessage?chat_id=1773228664&text=\"Hello, it's me\"",
+					"protocol": "https",
+					"host": [
+						"api",
+						"telegram",
+						"org"
+					],
+					"path": [
+						"bot{{vault:tg}}",
+						"sendMessage"
+					],
+					"query": [
+						{
+							"key": "chat_id",
+							"value": "1773228664"
+						},
+						{
+							"key": "text",
+							"value": "\"Hello, it's me\""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sendPhoto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "photo",
+							"type": "file",
+							"src": "/C:/Users/Arina/Downloads/котята.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api.telegram.org/bot{{vault:tg}}/sendPhoto?chat_id=1773228664",
+					"protocol": "https",
+					"host": [
+						"api",
+						"telegram",
+						"org"
+					],
+					"path": [
+						"bot{{vault:tg}}",
+						"sendPhoto"
+					],
+					"query": [
+						{
+							"key": "chat_id",
+							"value": "1773228664"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sendPDF",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "photo",
+							"type": "file",
+							"src": "/C:/Users/Arina/Downloads/Сопроводительное_письмо.pdf"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api.telegram.org/bot{{vault:tg}}/sendPhoto?chat_id=1773228664",
+					"protocol": "https",
+					"host": [
+						"api",
+						"telegram",
+						"org"
+					],
+					"path": [
+						"bot{{vault:tg}}",
+						"sendPhoto"
+					],
+					"query": [
+						{
+							"key": "chat_id",
+							"value": "1773228664"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SendPhoto-400",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "photo",
+							"type": "file",
+							"src": "/C:/Users/Arina/Downloads/Сопровод.docx"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api.telegram.org/bot{{vault:tg}}/sendPhoto?chat_id=1773228664",
+					"protocol": "https",
+					"host": [
+						"api",
+						"telegram",
+						"org"
+					],
+					"path": [
+						"bot{{vault:tg}}",
+						"sendPhoto"
+					],
+					"query": [
+						{
+							"key": "chat_id",
+							"value": "1773228664"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sendDocument",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "document",
+							"type": "file",
+							"src": "/C:/Users/Arina/Downloads/Сопровод.docx"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api.telegram.org/bot{{vault:tg}}/sendDocument?chat_id=1773228664",
+					"protocol": "https",
+					"host": [
+						"api",
+						"telegram",
+						"org"
+					],
+					"path": [
+						"bot{{vault:tg}}",
+						"sendDocument"
+					],
+					"query": [
+						{
+							"key": "chat_id",
+							"value": "1773228664"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getUserProfilePhotos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.telegram.org/bot{{vault:tg}}/getUserProfilePhotos?user_id=1773228664",
+					"protocol": "https",
+					"host": [
+						"api",
+						"telegram",
+						"org"
+					],
+					"path": [
+						"bot{{vault:tg}}",
+						"getUserProfilePhotos"
+					],
+					"query": [
+						{
+							"key": "user_id",
+							"value": "1773228664"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "token",
+			"value": "v",
+			"type": "string"
+		}
+	]
+}

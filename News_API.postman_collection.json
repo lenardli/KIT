@@ -1,0 +1,171 @@
+{
+	"info": {
+		"_postman_id": "eca95a83-40ce-4745-b836-ac7326b08e76",
+		"name": "News API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34537835",
+		"_collection_link": "https://www.postman.com/workspace/My-Workspace~3d88894d-1dc8-465f-850e-dabd3ff77b64/collection/34537835-eca95a83-40ce-4745-b836-ac7326b08e76?action=share&source=collection_link&creator=34537835"
+	},
+	"item": [
+		{
+			"name": "linux",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Api-Key",
+						"value": " {{vault:news}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://newsapi.org/v2/everything?q=linux",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"everything"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "linux"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Разработка",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Api-Key",
+						"value": "{{vault:news}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://newsapi.org/v2/everything?q=Разработка&language=ru&from=2025-09-14",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"everything"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Разработка"
+						},
+						{
+							"key": "language",
+							"value": "ru"
+						},
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "from",
+							"value": "2025-09-14"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Linux&page",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Api-Key",
+						"value": "{{vault:news}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://newsapi.org/v2/everything?q=linux&language=ru&page=3&pageSize=10",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"everything"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "linux"
+						},
+						{
+							"key": "language",
+							"value": "ru"
+						},
+						{
+							"key": "page",
+							"value": "3"
+						},
+						{
+							"key": "pageSize",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Science",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Api-Key",
+						"value": "{{vault:news}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://newsapi.org/v2/top-headlines?country=ru&q=science",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"top-headlines"
+					],
+					"query": [
+						{
+							"key": "country",
+							"value": "ru"
+						},
+						{
+							"key": "q",
+							"value": "science"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

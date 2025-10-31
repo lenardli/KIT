@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "5f0b51c7-7f2a-4d0e-adb9-a8c20a7f89ab",
+		"name": "hh.ru",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34537835",
+		"_collection_link": "https://www.postman.com/workspace/My-Workspace~3d88894d-1dc8-465f-850e-dabd3ff77b64/collection/34537835-5f0b51c7-7f2a-4d0e-adb9-a8c20a7f89ab?action=share&source=collection_link&creator=34537835"
+	},
+	"item": [
+		{
+			"name": "Contact_info",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "accept-language",
+						"value": "ru,en;q=0.9,fr;q=0.8,fr-FR;q=0.7"
+					},
+					{
+						"key": "baggage",
+						"value": "sentry-trace_id=c3bc084ff0a6469aac587d520b0898b6,sentry-sample_rand=0.310213,sentry-environment=production,sentry-release=xhh%4025.39.5.4,sentry-public_key=0cc3a09b6698423b8ca47d3478cfccac,sentry-transaction=%2F,sentry-sample_rate=0.001,sentry-sampled=false"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://hh.ru/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"138\", \"YaBrowser\";v=\"25.8\", \"Yowser\";v=\"2.5\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "sentry-trace",
+						"value": "c3bc084ff0a6469aac587d520b0898b6-a27d0f5ce28aa857-0"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 YaBrowser/25.8.0.0 Safari/537.36"
+					},
+					{
+						"key": "x-gib-fgsscgib-w-hh",
+						"value": "sWpLaf5a0efc68883583d386c9c08b8682e88e18"
+					},
+					{
+						"key": "x-gib-gsscgib-w-hh",
+						"value": "5MwpM7jALE5NaJlIk6TYFlX02lhgS2QEBTcxgfl2erwkrEK7gnBgkJPJWDV4QIcoRl+spcnyD3V1xH+eTitlvpnXCrBcTo6TAIzeEPQUADDSb92OL8Fvtu1O+Gs6iRGjfif/7LpC5rgkYqBvo9SP2VDESt1vePn1nR12dfYTyQuisI1lgvTTyVM47WVUIX2xbdN2HtrnJ5d+Ef5hDHxY42l+9eeK5H4eC6KWupuv6EsTNn1DfMuzy0BPMV1WZw=="
+					},
+					{
+						"key": "x-hhtmfrom",
+						"value": ""
+					},
+					{
+						"key": "x-hhtmsource",
+						"value": "main"
+					},
+					{
+						"key": "x-kl-saas-ajax-request",
+						"value": "Ajax_Request"
+					},
+					{
+						"key": "x-requested-with",
+						"value": "XMLHttpRequest"
+					},
+					{
+						"key": "x-xsrftoken",
+						"value": "d3b9328b32603da622881e060eaf272c"
+					},
+					{
+						"key": "Cookie",
+						"value": "hhuid=Yodm1lx1h!KknWZh8acw5w--; tmr_lvid=fafe6c109a3350109da33f7b09ad5373; tmr_lvidTS=1717694888331; _ym_uid=1717694888735621771; hhtoken=5S!3P35qYjFlrA7gmXP09oA_duAM; hhul=25c602ec05e477a9e88bdeb93cfa41b212ed86b62124fde4fea1fee329dcd01f; redirect_host=hh.ru; region_clarified=hh.ru; uxs_uid=bbd37980-50c6-11ef-a9a5-1f652a702a92; __ddg1_=rJq6qZ3XeuagYfaa1On0; display=desktop; crypted_hhuid=CDAF66C9DD53F24B5FEB159538097573C3543BB6E02DB645AFAB6ABAABB76A5D; _xsrf=d3b9328b32603da622881e060eaf272c; GMT=3; iap.uid=e187c448b5d741c98c7b2aba347c3964; cookie_policy_agreement=true; _ym_d=1758468484; _ibc=False; hhrole=applicant; crypted_id=BC1E3D2FCF431A00D50E2F974C16331EA5471C6F722104504734B32F0D03E9F8; total_searches=1; regions=1; __ddg9_=94.29.3.82; _hi=104712146; __zzatgib-w-hh=MDA0dC0jViV+FmELHw4/aQsbSl1pCENQGC9LX3tabmUhaHwUJUtefwgpHRg1KCZYO0AYQXN1fCpxHlAcOVURCxIXRF5cVWl1FRpLSiVueCplJS0xViR8SylEXFIKJRkXemwjTwwLVy8NPjteLW8PJwsSWAkhCklpC15zXV8WPkQhbAs4LBtFOA8teB1keEdXaywiE35wJgoKEGBydnYvWjxpUx1IFihMEU19JkpHMCZXUjsQW0ZCJjAbN1ddHBEkWA4hPwsXXFU+NVQOPHVXLw0uOF4tbx5mTGIfQ1tQeiUZFX1nFRtQSxgvS18zWn4lDzRDS1sKFA4/VFFCQisVWVJ1KW59OjAbRVceX0tgIEVWUX8XFXs/KGUaQE4nL0tfPm16L04efEsbNSEOPloLG3hyKFh/C2FAQm1zLURhDysYIVQ1Xz9BYUpKPTdYH0t1MBI=mu3/nA==; gsscgib-w-hh=5MwpM7jALE5NaJlIk6TYFlX02lhgS2QEBTcxgfl2erwkrEK7gnBgkJPJWDV4QIcoRl+spcnyD3V1xH+eTitlvpnXCrBcTo6TAIzeEPQUADDSb92OL8Fvtu1O+Gs6iRGjfif/7LpC5rgkYqBvo9SP2VDESt1vePn1nR12dfYTyQuisI1lgvTTyVM47WVUIX2xbdN2HtrnJ5d+Ef5hDHxY42l+9eeK5H4eC6KWupuv6EsTNn1DfMuzy0BPMV1WZw==; cfidsgib-w-hh=o7fotO10fdSX9Xa6YNa9NImq6+dGoqA5hkJ8DY5Gvyxv7zvfp/15H2KyuBIh6hrH/jwcOZJoCY/da/tfsQwCQH5r12y85J2y6C4aLmHgOKZun4p1syay4Re+szYE9KXF0d4S97aS+hrL9dTl8ZkqMOe5teJAPrpbJ8657Ns=; cfidsgib-w-hh=o7fotO10fdSX9Xa6YNa9NImq6+dGoqA5hkJ8DY5Gvyxv7zvfp/15H2KyuBIh6hrH/jwcOZJoCY/da/tfsQwCQH5r12y85J2y6C4aLmHgOKZun4p1syay4Re+szYE9KXF0d4S97aS+hrL9dTl8ZkqMOe5teJAPrpbJ8657Ns=; gsscgib-w-hh=5MwpM7jALE5NaJlIk6TYFlX02lhgS2QEBTcxgfl2erwkrEK7gnBgkJPJWDV4QIcoRl+spcnyD3V1xH+eTitlvpnXCrBcTo6TAIzeEPQUADDSb92OL8Fvtu1O+Gs6iRGjfif/7LpC5rgkYqBvo9SP2VDESt1vePn1nR12dfYTyQuisI1lgvTTyVM47WVUIX2xbdN2HtrnJ5d+Ef5hDHxY42l+9eeK5H4eC6KWupuv6EsTNn1DfMuzy0BPMV1WZw==; device_magritte_breakpoint=xs; device_breakpoint=xs; __ddg10_=1759006392; __ddg8_=T1uBcJWIPsDAmb2R; fgsscgib-w-hh=sWpLaf5a0efc68883583d386c9c08b8682e88e18"
+					}
+				],
+				"url": {
+					"raw": "https://hh.ru/vacancy/contact_info?employer_id=2645761&id=125866644",
+					"protocol": "https",
+					"host": [
+						"hh",
+						"ru"
+					],
+					"path": [
+						"vacancy",
+						"contact_info"
+					],
+					"query": [
+						{
+							"key": "employer_id",
+							"value": "2645761"
+						},
+						{
+							"key": "id",
+							"value": "125866644"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
